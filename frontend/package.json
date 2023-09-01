@@ -17,9 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css,scss}\"",
+    "lint-scripts": "eslint .",
+    "lint:fix-scripts": "eslint --fix .",
+    "format-scripts": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css,scss}\"",
     "prepare": "husky install"
   },
   "browserslist": {

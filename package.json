@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "cd frontend && npm run lint-scripts",
+    "lint:fix": "cd frontend && npm run lint:fix-scripts",
+    "format": "cd frontend && npm run format-scripts"
   },
   "author": "",
   "license": "ISC",
