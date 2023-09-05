@@ -1,9 +1,10 @@
 import React from "react";
 import { Form, InputGroup, FormControl, Button } from "react-bootstrap";
-import { CiLock, CiMail } from "react-icons/ci";
+import { FcLock, FcFeedback } from "react-icons/fc";
 // import { Box, TextField, Button } from "@mui/material";
 // import MailOutlineIcon from "@mui/icons-material/MailOutline";
 // import KeyIcon from "@mui/icons-material/Key";
+import { Link } from "react-router-dom";
 import "./Login.scss";
 
 const Login = () => {
@@ -35,12 +36,12 @@ const Login = () => {
             <Form>
               <Form.Group controlId="email">
                 <Form.Label className="login-lable">Email</Form.Label>
-                <InputGroup className="mb-3 input-group">
+                <InputGroup className="mb-3">
                   <InputGroup.Text className="input-icon">
-                    <CiMail />
+                    <FcFeedback />
                   </InputGroup.Text>
                   <FormControl
-                    className="login-input"
+                    className="login-input-email"
                     type="email"
                     placeholder="Enter your Email"
                     required
@@ -51,14 +52,17 @@ const Login = () => {
                 <Form.Label className="login-lable">Password</Form.Label>
                 <InputGroup className="mb-3">
                   <InputGroup.Text className="input-icon">
-                    <CiLock />
+                    <FcLock />
                   </InputGroup.Text>
                   <FormControl
-                    className="login-input"
+                    className="login-input-password"
                     type="password"
                     placeholder="Enter Password"
                     required
                   />
+                  <InputGroup.Text className="forgotPassword">
+                    <Link className="forgotLink">Forgot Password?</Link>
+                  </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
               <Button className="purple-btn-lg mb-3 mt-3">Log In</Button>

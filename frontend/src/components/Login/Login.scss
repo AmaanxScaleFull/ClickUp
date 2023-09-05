@@ -166,26 +166,63 @@ $offwhite: #fafbfc;
   padding: 0 0 8px 2px;
   margin-bottom: 0 !important;
 }
-.login-input {
+.login-input-email {
   border-left: none !important;
   font-size: small !important;
   font-weight: 500 !important;
+  height: 40px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 9px !important;
+  border-bottom-right-radius: 9px !important;
   &:focus {
     box-shadow: none !important;
     border-color: #dee2e6 !important;
   }
   &::placeholder {
-    font-size: small !important;
-    font-weight: 500 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+}
+.login-input-password {
+  border-left: none !important;
+  border-right: none !important;
+  font-size: small !important;
+  font-weight: 500 !important;
+  height: 40px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  &:focus {
+    box-shadow: none !important;
+    border-color: #dee2e6 !important;
+  }
+  &::placeholder {
+    font-size: 14px !important;
+    font-weight: 400 !important;
   }
 }
 .input-icon {
   background-color: white !important;
+  border-top-left-radius: 9px !important;
+  border-bottom-left-radius: 9px !important;
+  font-size: medium !important;
 }
 
 .input-group {
   &:focus-within {
-    border: 1px solid $purple;
-    border-radius: 7px;
+    border: 1.5px solid $purple;
+    border-radius: 9px;
   }
+}
+.forgotPassword {
+  background-color: white !important;
+  border-top-right-radius: 9px !important;
+  border-bottom-right-radius: 9px !important;
+}
+
+.forgotLink {
+  text-decoration: none !important;
+  font-size: small !important;
+  font-weight: 500 !important;
+  color: $purple;
 }
