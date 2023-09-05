@@ -35,7 +35,7 @@ const Login = () => {
             <Form>
               <Form.Group controlId="email">
                 <Form.Label className="login-lable">Email</Form.Label>
-                <InputGroup className="mb-3">
+                <InputGroup className="mb-3 input-group">
                   <InputGroup.Text className="input-icon">
                     <CiMail />
                   </InputGroup.Text>

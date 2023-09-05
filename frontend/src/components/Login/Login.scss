@@ -168,6 +168,8 @@ $offwhite: #fafbfc;
 }
 .login-input {
   border-left: none !important;
+  font-size: small !important;
+  font-weight: 500 !important;
   &:focus {
     box-shadow: none !important;
     border-color: #dee2e6 !important;
@@ -179,4 +181,11 @@ $offwhite: #fafbfc;
 }
 .input-icon {
   background-color: white !important;
+}
+
+.input-group {
+  &:focus-within {
+    border: 1px solid $purple;
+    border-radius: 7px;
+  }
 }
